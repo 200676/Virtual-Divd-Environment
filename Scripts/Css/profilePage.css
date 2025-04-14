@@ -1,0 +1,88 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: teal;
+            padding: 50px;
+            color: white;
+            text-align: right;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .sidebar h2 {
+            margin: 15px 0;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .info-row {
+            margin: 10px 0;
+        }
+
+        .info-row strong {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .recent-projects table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .recent-projects th, .recent-projects td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recent-projects th {
+            background-color: #f4f4f4;
+        }
