@@ -1,48 +1,99 @@
-.navBar{
+.navBar {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     font-size: 25px;
-    padding: 14 16;
+    padding: 14px 16px;
     margin: 0;
+    background-color: #000000;
 }
-  ul {
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000000;
-  }
-  
-  li {
+}
+
+li {
     float: left;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover {/* Change the link color to #111 (black) on hover */
-    background-color: #111;
-  }
-  h1{
+}
+
+li a:hover {
+    background-color: #111; /* Change the link color to #111 (black) on hover */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    font-size: 20px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.navBar.expanded {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navBar.expanded li {
+    float: none;
+    width: 100%;
+}
+
+.navBar.expanded li a {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navBar {
+        display: none; /* Hide the navbar by default */
+    }
+
+    .navBar.expanded {
+        display: flex; /* Show the navbar when expanded */
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger menu on smaller screens */
+    }
+}
+
+h1 {
     text-align: center;
     font-size: 30px;
-  }
-  h2{
+}
+
+h2 {
     text-align: center;
     font-size: 20px;
-  }
-  .navBar .spacer{
+}
+
+.navBar .spacer {
     flex: 1; /* This will take up all the available space */
-  }
-  
-  .profileImage{
+}
+
+.profileImage {
     width: 50px;
     height: 45px;
     filter: invert(100%); /* Invert the colors of the image */
-  }
+}
