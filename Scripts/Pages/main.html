@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="/Scripts/Css/mainPage.css">
     <link rel="stylesheet" href="/Scripts/Css/navbar.css">
     <script src="/Scripts/JavaScript/Page.js" defer></script>
+    <script src="/Scripts/JavaScript/PostText.js" defer></script>
     <script src="/Scripts/JavaScript/navbar.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Virtual DIVD Environment</title>
 </head>
   <body>
     <header>
-        <script src="navbar.js"></script>
+        <script src="navbar.html"></script>
 
     </header>
         <main>
@@ -20,8 +21,13 @@
                 <h1>Welcome to Virtual Divd Environment</h1>
             </section>
             <section class="section" style="text-align: center;">
-                <p>This page is still being continued to be changed and restyled</p> 
+                <h3>Posts</h3>
+                
+                <textarea id="post-text" rows="4", cols="50" placeholder="wrtie your post here..."></textarea><br>
+                <button id="post-button" style="height: 40px; width: 80px;">Post</button>
+                <div id="post-output" style="margin-top: 20px;"></div>
             </section>
+
         </main>
     </body>
 </html>
