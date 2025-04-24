@@ -6,22 +6,19 @@
     <link rel="stylesheet" href="/Scripts/Css/profilePage.css">
     <link rel="stylesheet" href="/Scripts/Css/navbar.css">
     <script src="/Scripts/JavaScript/navbar.js" defer></script>
-    
 </head>
 <body>
 
-    <header><script src="navbar.js"></script>
+    <header>
+        <script src="navbar.js"></script>
     </header>
   
     <div class="container">
         <div class="sidebar">
             <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Profile Icon">
             <h2>Burk Macklin</h2>
-            <a href="#">Home</a>
-            <a href="#">Work</a>
-            <a href="#">Support</a>
-            <a href="#">Setting</a>
-            <a href="#">Signout</a>
+            <p><strong>Points:</strong> 1200</p>
+            
         </div>
 
         <div class="content">
@@ -34,16 +31,28 @@
             </div>
 
             <div class="card">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <li>Skill 3</li>
-                    <li>Skill 4</li>
-                </ul>
-            </div>
+                <h2>Statistics</h2>
+                <div class="info-row"><strong>Projects Completed:</strong> 5</div>
+                <div class="info-row"><strong>Tasks Assigned:</strong> 10</div>
+                <div class="info-row"><strong>Tasks Completed:</strong> 8</div>
+                <div class="info-row"><strong>Points Earned:</strong> 1200</div>
 
-            
+                <div class="achievements">
+                    <h3>Achievements</h3>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🏆</span>
+                        <span>Completed 5 projects</span>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">⭐</span>
+                        <span>Earned 1200 points</span>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🎖️</span>
+                        <span>Top performer of the month</span>
+                    </div>
+                </div>
+            </div>
 
             <div class="card recent-projects">
                 <h2>Recent Projects</h2>
@@ -61,6 +70,29 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div class="card">
+                <h2>Edit Profile</h2>
+                <form id="editProfileForm">
+                    <div class="info-row">
+                        <label for="fullName"><strong>Full Name:</strong></label>
+                        <input type="text" id="fullName" name="fullName" value="Burt Macklin">
+                    </div>
+                    <div class="info-row">
+                        <label for="email"><strong>Email:</strong></label>
+                        <input type="email" id="email" name="email" value="abc@gmail.com">
+                    </div>
+                    <div class="info-row">
+                        <label for="phone"><strong>Phone:</strong></label>
+                        <input type="text" id="phone" name="phone" value="00923469874656">
+                    </div>
+                    <div class="info-row">
+                        <label for="address"><strong>Address:</strong></label>
+                        <input type="text" id="address" name="address" value="street no. 4, xyz">
+                    </div>
+                    <button type="button" id="saveProfileButton">Save</button>
+                </form>
             </div>
         </div>
     </div>
