@@ -1,16 +1,17 @@
-document.addEventListener("DOMContentLoaded",() =>{
-    // Initialize the page
-    const postbutton = document.getElementById("post-button");
+document.addEventListener("DOMContentLoaded", () => {
+    const postButton = document.getElementById("post-button");
     const postText = document.getElementById("post-text");
     const postOutput = document.getElementById("post-output");
 
-    postbutton.addEventListener("click", () => {
+    postButton.addEventListener("click", () => {
         const text = postText.value.trim();
-        if (text) {
-            const postElement = document.createElement("p");
+        if (text !== "") {
+            const postElement = document.createElement("div"); // Create a new post block
             postElement.textContent = text;
-            postOutput.appendChild(postElement);
-            postText.value = ""; // Clear the input field after posting
+            postElement.className = "post-block"; // Apply post styling
+            postOutput.prepend(postElement); // <-- NEW: Add to top
+
+            postText.value = ""; // Clear input after posting
         } else {
             alert("Please enter some text before posting.");
         }
