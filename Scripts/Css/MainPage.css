@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: lightcyan;
+    background-color: black;
     
 }
 header {
@@ -13,6 +13,15 @@ header {
     padding: 0;
     text-align: center;
     font-weight: bold;
+}
+h1 {
+ color: yellow;
+}
+h4{
+    color: yellow;
+}
+.title{
+    color: yellow;
 }
 .section {
     height: 50vh;
