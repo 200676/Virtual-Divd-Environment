@@ -29,8 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     postButton.addEventListener("click", () => {
         const text = postText.value.trim();
-
+    
         if (text !== "") {
+            
             savePosts(text);
             postText.value = "";
             loadposts();
@@ -45,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         postText.disabled = !isLoggedIn;
         postButton.disabled = !isLoggedIn;
     });
-
     loadposts();
 });
 
