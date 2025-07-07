@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     postButton.addEventListener("click", () => {
-        const text = postText.value.trim();
+        const textPost = postText.value.trim();
     
-        if (text !== "") {
+        if (textPost !== "") {
             
-            savePosts(text);
+            savePosts(textPost);
             postText.value = "";
             loadposts();
         } else {
